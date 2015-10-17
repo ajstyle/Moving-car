@@ -1,0 +1,96 @@
+body
+{
+  animation: GoBackground 5s linear  infinite ;  
+  -moz-animation: GoBackground 5s linear  infinite ;  
+  -webkit-animation: GoBackground 5s linear  infinite ;  
+  background: #111 url(../img/bg.jpg) repeat-x 0 0  ; 
+  background-position : center; 
+  height : 100% ; 
+  background-size:cover;
+
+  }
+
+  #container
+  {
+  margin : 40px auto ; 
+  width : 1000px ; 
+  overflow : hidden ; 
+  
+  }
+  
+  #car-body
+  {
+  background : url(../img/5.png)no-repeat ; 
+  width : 600px ; 
+  height : 370px ; 
+  margin : auto ; 
+  }
+  
+  #wheel-front
+  {
+  animation: GoWheel 5s linear 0s infinite ;  
+  -moz-animation: GoWheel 5s linear 0s infinite ;  
+  -webkit-animation: GoWheel 5s linear 0s infinite ;  
+  
+  background:url(../img/tierweb.png) no-repeat  ; 
+  float:left ; 
+  height:110px ; 
+  width:110px ; 
+  margin-left : 270px ; 
+  margin-top : -210px ; 
+  }
+    #wheel-back
+  {
+  animation: GoWheel 5s linear 0s infinite ;  
+  -moz-animation: GoWheel 5s linear 0s infinite ;  
+  -webkit-animation: GoWheel 5s linear 0s infinite ;  
+  
+  background:url(../img/tierweb.png) no-repeat  ; 
+  float:left ; 
+  height:110px ; 
+  width:110px ; 
+  margin-left : 615px ; 
+  margin-top : -210px ; 
+  }
+
+  /*Animation*/
+  @keyframes GoWheel
+  {
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(-360deg)}
+  }
+  @-moz-keyframes GoWheel
+  {
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(-360deg)}
+  }
+  @-webkit-keyframes GoWheel
+  {
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(-360deg)}
+  }
+  
+  @keyframes GoBackground
+  {
+    0%{background-position:0px 0px ;  }
+	100%{background-position : 1000px 0px }
+  }
+   @-moz-keyframes GoBackground
+  {
+    0%{background-position:0px 0px ;  }
+	100%{background-position : 1000px 0px }
+  }
+   @-webkit-keyframes GoBackground
+  {
+    0%{background-position:0px 0px ;  }
+	100%{background-position : 1000px 0px }a
+  }
+  
+  .pause
+  {
+  animation-play-state : paused !important; 
+  -moz-animation-play-state : paused !important ; 
+  -webkit-animation-play-state : paused !important; 
+   
+      
+  }
